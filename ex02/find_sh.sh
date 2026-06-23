@@ -1,3 +1,3 @@
 #!/bin/bash
 
-find . -type f -name "*.sh" -printf "%f\n"
+find . -type f -name "*.sh" -exec basename {} .sh \;
